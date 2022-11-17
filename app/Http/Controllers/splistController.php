@@ -46,11 +46,11 @@ class splistController extends Controller
     }
 
        // to update data into database
-       public function updatesh(Request $req)
+       public function updateshp(Request $req)
        {
    
-           $shoppingObj = new Shoppinglist();
-           $shoppingObj->title = $req->shplist;
+           $shoppingObj = shoppinglist::find($req->id);
+           $shoppingObj->title = $req->shpupdate;
    
            $shoppingObj->save();
    

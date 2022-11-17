@@ -28,4 +28,4 @@ Route::get('/delete/{id}', [splistController::class, 'deleteList']);
 Route::get('/edit/{id}', [splistController::class, 'editlist']);
 
 // code to update data from database
-Route::get('/updateshop', [splistController::class, 'updateshp'])->name('updateshop') ;
+Route::post('/updateshop', [splistController::class, 'updateshp'])->name('updateshop') ;

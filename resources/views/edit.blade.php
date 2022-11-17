@@ -16,7 +16,7 @@
     <form action="{{route('updateshop')}}" method="post">
         @csrf
         <input type="text" name="shpupdate" value={{$data->title}}>
-        <input type="text" name="id" value={{$data->id}}>
+        <input type="hidden" name="id" value={{$data->id}}>
         <button type="submit">Update</button>
 
     </form>
